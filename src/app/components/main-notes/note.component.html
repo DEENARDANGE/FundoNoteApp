@@ -1,0 +1,57 @@
+<!-- <div class="container" fxLayout="column" fxLayoutGap="5%" fxLayoutAlign="center center">
+  <div fxFlex="40%" fxFlex.xs="70%" fxFlex.sm="40%" fxFlex.md="30%">
+    <app-app-note-search-body (eventCreate)="refresh($event)"></app-note-search-body>
+  </div>
+  <div fxFlex="40%" fxFlex.xs="70%" fxFlex.sm="40%" fxFlex.md="30%">
+    <app-pin-note [notes]="notes | noteFilter: 'pinned'" [grid]="grid" [message]="'pinned'" (updateNoteEvent)="onUpdateNote($event)">
+    </app-pin-note>
+  </div>
+  <div fxFlex="40%" fxFlex.xs="70%" fxFlex.sm="40%" fxFlex.md="30%">
+    <app-pin-note [notes]="notes | noteFilter" [grid]="grid" [message]="'note'" (updateNoteEvent)="onUpdateNote($event)">
+    </app-pin-note>
+  </div>
+</div> -->
+<!-- <body>
+    <div fxLayout="row" fxLayoutAlign="center center">
+        <mat-card fxFlex="20%;" fxFlex.xs="70%" fxFlex.sm="40%" fxFlex.md="30%">
+        <form [formGroup]="noteForm" (ngSubmit)="onSubmit(noteForm.value)">
+          <div align="center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuXbSjgoUtf5l67ZZS9a0nIiK5O_8G-qgAk_4d4o_9Jtj7Sydauw" height=50% width=50%>
+          </div><br>
+          <div align="center"><label><b>Create New Note</b></label></div><br>
+          <div class="form-group" class="example-container">
+            <mat-form-field>
+              <input matInput placeholder="Enter your Description" type="text" formControlName="description" class="form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.description.errors }" />
+                <mat-error *ngIf="submitted && f.description.errors" class="invalid-feedback">
+                <mat-error *ngIf="f.description.errors.required">
+                  *description  is <strong>required</strong>
+                </mat-error>
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="form-group" class="example-container">
+            <mat-form-field>
+              <input matInput placeholder="Enter your Note title" [type]="text"
+                formControlName="title" class="form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.title.errors }" />
+              <mat-error *ngIf="submitted && f.title.errors" class="invalid-feedback">
+                <mat-error *ngIf="f.title.errors.required">
+                  *title is <strong>required</strong>
+                </mat-error>
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="form-group">
+            <mat-card-actions>
+              <div class="button-row">
+                <button mat-raised-button [disabled]="noteForm.invalid">Create</button>
+                <div class="new-user"><button mat-button class="btn btn-link" routerLink="/register">Register</button></div>
+              </div>
+                <div class="new-user"><a class="btn btn-link" routerLink="/forgotPassword">forgot Password?</a></div>
+            </mat-card-actions>
+          </div>
+        </form>
+      </mat-card>
+    </div>
+    </body> -->

@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { HttpHandlerService } from './http-handler.service';
+import { NoteService } from './note.service';
 
-describe('HttpHandlerService', () => {
+describe('NoteService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: HttpHandlerService = TestBed.get(HttpHandlerService);
+    const service: NoteService = TestBed.get(NoteService);
     expect(service).toBeTruthy();
   });
 });
